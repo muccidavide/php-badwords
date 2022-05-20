@@ -17,12 +17,14 @@ var_dump($censured_text);
 </head>
 <body>
     <h1>Original Text</h1>
+    <p><?= strlen($text_example); ?></p>
     <p><?= $text_example; ?></p>
     <h1>Which word do you wanna censured?</h1>
     <form action="index.php" method="get">
     <input type="text" name="delete_word">
     <button type="submit">Submit</button>
     <h2>Censured Text</h2>
+    <p><?= strlen($censured_text); ?></p>
     <p><?= $censured_text; ?></p>
 
 
